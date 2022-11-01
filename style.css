@@ -329,3 +329,50 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 500px) {
+    .playerMark {
+        width: 327px;
+    }
+    .xo {
+        width: 279px;
+    }
+    .newGame {
+        margin: 0 auto 35px auto;
+        width: 327px;
+    }
+    .newGameVsPlayer {
+        margin: auto;
+        width: 327px;        
+    }
+    .cellContainer {
+        margin: auto;
+        width: 375px;
+        justify-content: center;
+        gap: 10px;
+
+    }
+    .cellContainer div {
+        width: 96px;
+        height: 96px;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 15px;
+    }
+    .result {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    .result div {
+        margin-top: 20px;
+        text-align: center;
+        width: 96px;
+        height: 64px;
+        border-radius: 15px;
+    }
+}
