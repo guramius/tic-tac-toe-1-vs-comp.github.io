@@ -1,0 +1,331 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1A2A33;
+}
+.container {
+    width: 460px;
+}
+.imggame {
+    width: 40px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cellContainer  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cellContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 140px;
+    height: 140px;
+    background-color: #1F3641;
+    box-shadow: 0 8px 0 0 #10212A;
+    border-radius: 15px;
+    color: white;
+}
+.result {
+    display: flex;
+    justify-content: space-between;
+}
+.result div {
+    margin-top: 20px;
+    text-align: center;
+    width: 140px;
+    height: 72px;
+    border-radius: 15px;
+}
+.statusText {
+    color: white;
+    font-size: 20px;
+}
+.youX {
+    padding-top: 20px;
+    background: #31C3BD;
+}
+.youX p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1A2A33;
+}
+.youX span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.ties {
+    padding-top: 20px;    
+    background: #A8BFC9;
+}
+.ties p {    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1A2A33;
+}
+.ties span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.cup {
+    padding-top: 20px;    
+    background: #F2B137;
+}
+.cup p {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1A2A33;
+}
+.cup span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+.endgame {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 31%;
+    width: 100%;
+    height: 266px;
+    background-color: #1F3641;    
+}
+.text1 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    list-style: 50px;
+    color: #A8BFC9;
+}
+.quit {
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+    color: #1A2A33;
+    padding: 15px 17px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #A8BFC9;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 0 #6B8997;
+}
+.nextRound {
+    border: none;
+    cursor: pointer;
+    color: #1A2A33;
+    padding: 15px 17px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #F2B137;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 0 #CC8B13;
+}
+.whosTurn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    width: 140px;
+    background: #1F3641;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 0 #10212A;
+}
+.whosTurn p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A8BFC9;
+}
+.statusText svg {
+    width: 20px;
+    height: 20px;
+}
+
+.restartGame {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.507);    
+}
+.wtf {
+    display: block;
+}
+.restart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 31%;
+    width: 100%;
+    height: 266px;
+    background-color: #1F3641;       
+}
+.textRestart {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    list-style: 50px;
+    color: #A8BFC9;    
+}
+.cancelRestart {
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+    color: #1A2A33;
+    padding: 15px 17px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #A8BFC9;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 0 #6B8997;    
+}
+.restartYes {
+    border: none;
+    cursor: pointer;
+    color: #1A2A33;
+    padding: 15px 17px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #F2B137;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 0 #CC8B13;    
+}
+.containerBlur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #10212a;
+}
+.playerMark {
+    margin: 40px 0;
+    padding: 24px;
+    background-color: #1F3641;
+    border-radius: 16px;
+    box-shadow: 0 8px 2px -2px #191d20;
+}
+.mark {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A8BFC9;
+}
+.xo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    width: 412px;
+    height: 72px;
+    background: #10212A;
+}
+.xMark {
+    width: 198px;
+    height: 57px;
+    padding: 10px 0;
+    transition: all ease-out 0.3s;
+}
+.xMark:hover {
+    width: 198px;
+    border-radius: 10px;
+    background-color: rgba(168, 191, 201, 0.05);
+    cursor: pointer;
+}
+.oMark {
+    width: 198px;
+    height: 57px;
+    padding: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #A8BFC9;
+}
+.active {
+    background-color: #a8bfc9a1;
+    border-radius: 10px;
+}
+.wtf1 {
+    background-color: #a8bfc9a1;   
+}
+.xFirst {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #A8BFC9;
+}
+.newGame {
+    margin-bottom: 35px;
+    width: 460px;
+    padding: 17px 0 25px 0;
+    border-radius: 15px;
+    background: #F2B137;
+    color: #1A2A33;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    box-shadow: 0 8px 0 0 #ca8911;
+    border: none;
+    cursor: pointer;
+}
+.newGameVsPlayer {
+    margin-bottom: 35px;
+    width: 460px;
+    padding: 17px 0 25px 0;
+    border-radius: 15px;
+    background: #31C3BD;
+    color: #1A2A33;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    box-shadow: 0 8px 0 0 #118C87;
+    border: none; 
+    cursor: pointer;   
+}
+.newGameButtons {
+    display: flex;
+    flex-direction: column;
+}
